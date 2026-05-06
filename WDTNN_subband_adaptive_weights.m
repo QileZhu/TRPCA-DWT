@@ -44,7 +44,7 @@ function weights = WDTNN_subband_adaptive_weights(X, W, l, epsilon, w_cap)
     end
 
     % Mode-3 DWT transform
-    Xbar = dwt_mode3_mat(X, W);
+    Xbar = dwt_mode3(X, W);
 
     % Get DWT subband index sets
     subband_idx = local_dwt_subband_indices(n3, l);
